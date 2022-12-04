@@ -16,12 +16,7 @@ print(contains)
 ### PART 2 ###
 
 for i in range(0, len(sorted_src)):
-    temp_src = []
-    temp_src1 = [sorted_src[i][0], sorted_src[i][1]]
-    temp_src2 = [sorted_src[i][2], sorted_src[i][3]]
-    temp_src.append(temp_src1)
-    temp_src.append(temp_src2)
-    new_src.append(temp_src)
+    new_src.append([[sorted_src[i][0], sorted_src[i][1]], [sorted_src[i][2], sorted_src[i][3]]])
 
 for i in new_src:
     ls1 = [*range(int(i[0][0]), int(i[0][1]) + 1)]
